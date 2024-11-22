@@ -49,7 +49,6 @@ var _a;
     var educationElement = document.getElementById("education");
     var experienceElement = document.getElementById("experience");
     var skillElement = document.getElementById("skills");
-    var cvNameElement = document.getElementById("cvname");
     if (profilePic &&
         nameElement &&
         emailElement &&
@@ -58,8 +57,7 @@ var _a;
         ageElement &&
         educationElement &&
         experienceElement &&
-        skillElement &&
-        cvNameElement) {
+        skillElement) {
         //get values from form
         var name_1 = nameElement.value;
         var email = emailElement.value;
@@ -69,7 +67,6 @@ var _a;
         var education = educationElement.value;
         var experience = experienceElement.value;
         var skills = skillElement.value;
-        var cvName = cvNameElement.value;
         // profile
         var profilePicture = (_a = profilePic.files) === null || _a === void 0 ? void 0 : _a[0];
         var profilePicUrl = profilePicture
@@ -97,7 +94,7 @@ var _a;
             actionButtons.appendChild(pdfDownloadButton);
             //add shareable link button
             var copyLinkButton = document.createElement("button");
-            copyLinkButton.textContent = "copy shareable link";
+            copyLinkButton.textContent = "Copy link";
             copyLinkButton.style.fontSize = "20px";
             copyLinkButton.addEventListener("click", function () { return __awaiter(_this, void 0, void 0, function () {
                 var shareableLink, error_1;
@@ -105,7 +102,7 @@ var _a;
                     switch (_a.label) {
                         case 0:
                             _a.trys.push([0, 2, , 3]);
-                            shareableLink = "https://yourdomain.com/resumes".concat(name_1.replace(/\s+/g, "_"), "_cv.html ");
+                            shareableLink = "https://yourdomain.com/resumes ".concat(name_1.replace(/\s+/g, "_"), "_cv.html ");
                             return [4 /*yield*/, navigator.clipboard.writeText(shareableLink)];
                         case 1:
                             _a.sent();

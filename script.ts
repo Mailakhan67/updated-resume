@@ -20,7 +20,6 @@ document
       "experience"
     ) as HTMLInputElement;
     const skillElement = document.getElementById("skills") as HTMLInputElement;
-    const cvNameElement = document.getElementById("cvname") as HTMLInputElement;
 
     if (
       profilePic &&
@@ -31,8 +30,7 @@ document
       ageElement &&
       educationElement &&
       experienceElement &&
-      skillElement &&
-      cvNameElement
+      skillElement 
     ) {
 
       //get values from form
@@ -44,7 +42,7 @@ document
       const education = educationElement.value;
       const experience = experienceElement.value;
       const skills = skillElement.value;
-      const cvName = cvNameElement.value;
+      
 
       // profile
       const profilePicture = profilePic.files?.[0];
@@ -93,11 +91,11 @@ document
 
         //add shareable link button
         const copyLinkButton = document.createElement("button");
-        copyLinkButton.textContent = "copy shareable link";
+        copyLinkButton.textContent = "Copy link";
         copyLinkButton.style.fontSize = "20px"; 
         copyLinkButton.addEventListener("click", async () => {
           try {
-            const shareableLink = `https://yourdomain.com/resumes${name.replace(
+            const shareableLink = `https://yourdomain.com/resumes ${name.replace(
               /\s+/g,
               "_"
             )}_cv.html `;

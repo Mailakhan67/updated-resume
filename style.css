@@ -2,30 +2,33 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 20px;
   padding: 0;
-  background-color: rgb(152, 216, 198);
+   background-color: #818373;
 }
 h1 {
   text-align: center;
-  color: rgba(36, 32, 24, 0.696);
+  color: #f5f5f5;
   text-shadow: 3px 3px 5px;
   font-weight: bold;
   font-size: 40px;
 }
 form {
   max-width: 650px;
-  background-color: rgb(163, 103, 103);
+  background-color: rgba(240, 240, 240, 0.9);
+
   margin: auto;
   border-radius: 7px;
-  box-shadow: 5px 8px 6px rgb(93, 116, 124);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
   padding: 20px;
 }
 fieldset {
-  border: 3px solid rgb(63, 102, 102);
+  border: 3px solid #5a6d7c; 
   border-radius: 7px;
   padding: 20px;
   margin-bottom: 17px;
-  background-color: rgba(189, 189, 189, 0.276);
-  box-shadow: 1px 1px 8px 3px gray;
+  background-color: rgba(240, 240, 240, 0.8); 
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1); 
+
 }
 button {
   margin-top: 10px;
@@ -36,7 +39,7 @@ button {
    border-radius: 80px; 
   transition: 0.5s ease-in;
   font-weight: bold;
-  background-color: rgb(205, 204, 204);
+  background-color: #5A9BD5;
   font-size: 14px;
 }
 button:hover {
@@ -63,13 +66,15 @@ label {
 }
 input,
 textarea {
+  color: #333333;
   width: 550px;
   padding: 7px;
   margin-top: 5px;
-  border: 2px solid rgba(107, 122, 23, 0.759);
+  border: 2px solid  #D3D3D3;
   border-radius: 5px;
-  box-shadow: 1px 1px 8px 3px gray;
+  box-shadow: 1px 1px 8px 3px #D3D3D3;
   box-sizing: border-box;
+  background-color: #F5F5F5;
 }
 #resumeOutput {
   margin-top: 50px;
@@ -78,7 +83,7 @@ textarea {
   padding: 20px;
   border: 2px solid gray;
   border-radius: 8px;
-  background-color: aliceblue;
+  background-color:#f5f5f5;
   box-shadow: 5px 8px 6px rgb(93, 116, 124);
 }
 #resumeOutput h2 {
@@ -97,6 +102,7 @@ textarea {
   height: 150px;
   object-fit: cover;
 }
+
 /* media query */
 /* Mobile Styles */
 @media screen and (max-width: 480px) {
