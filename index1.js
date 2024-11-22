@@ -40,7 +40,7 @@ var outputElement = document.getElementById("resume");
 var actionButtons = document.createElement("div");
 actionButtons.id = " buttonsContainer";
 outputElement === null || outputElement === void 0 ? void 0 : outputElement.appendChild(actionButtons);
-// // //         //pdf download  button //
+//pdf download  button //
 var pdfDownloadButton = document.createElement("button");
 pdfDownloadButton.innerText = "Download as PDF";
 pdfDownloadButton.style.backgroundColor = "green";
@@ -54,38 +54,13 @@ pdfDownloadButton.addEventListener("click", function () {
     window.print();
 });
 actionButtons.appendChild(pdfDownloadButton);
-// ///////////////////////////
-// Create a button to trigger PDF download
-// Create a button to trigger PDF download
-//add shareable link button
-// const copyLinkButton = document.createElement("button");
-// copyLinkButton.innerText = "Copy link";
-// copyLinkButton.style.fontSize = "20px";
-// copyLinkButton.addEventListener("click", async () => {
-//   try {
-//     const shareableLink = `https://yourdomain.com/resumes ${name.replace(
-//       /\s+/g,
-//       "_"
-//     )}_cv.html `;
-//     await navigator.clipboard.writeText(shareableLink);
-//     alert("sharable link copied to clipboard");
-//   } catch (error) {
-//     console.error("Failed to copy link", error);
-//     alert("Failed to copy link to clipboard, please try again ");
-//   }
-// });
-///////////////////////
-// Select the parent element where the button will be added
 var app = document.getElementById("resume");
-// Create a button element
 var copyLinkButton = document.createElement("button");
 copyLinkButton.innerText = "Copy Shareable Link";
 copyLinkButton.style.fontSize = "20px";
-// copyLinkButton.style.padding = "10px 20px";
 copyLinkButton.style.fontWeight = "bolder";
 copyLinkButton.style.marginLeft = "8px";
 copyLinkButton.style.cursor = "pointer";
-// Add an event listener to handle the button click
 copyLinkButton.addEventListener("click", function () { return __awaiter(_this, void 0, void 0, function () {
     var name_1, shareableLink, error_1;
     return __generator(this, function (_a) {
@@ -110,7 +85,6 @@ copyLinkButton.addEventListener("click", function () { return __awaiter(_this, v
         }
     });
 }); });
-// Append the button to the parent element
 if (app) {
     app.appendChild(copyLinkButton);
 }
