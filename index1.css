@@ -641,13 +641,108 @@ h4 {
   }
 }
 
+/* 375 */
+/* For 375px screen size */
+@media (max-width: 375px) {
+  .main {
+    width: 100%;
+    flex-direction: column; 
+    margin: 10px auto;
+    padding: 10px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+  }
+
+  .left-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     align-items: center; 
+    width: 100%; /* Full width for small screens */
+    margin-bottom: 20px; /* Gap between left and right sections */
+    height: auto; /* Height automatically adjust hogi */
+    text-align: center; /* Content centered rakha */
+  }
+
+  .right-section {
+    width: 100%; /* Full width for small screens */
+    margin-left: 0; /* Margin remove ki */
+    height: auto; /* Height automatically adjust hogi */
+  }
+  .name {
+    font-size: 36px;
+    text-align: center; /* Centered text */
+    margin-top: 10px;
+  }
+  .Profile {
+    margin-top: 30px; 
+    padding: 15px;
+    margin-left: 63px;
+  }
+  .d_p{
+    margin-right: 165px;
+  }
+  img {
+    left: 50%;
+    transform: translateX(-50%); /* Image properly center aligned */
+    top: -38px;
+  }
+
+  h2 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .about_p {
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .p_h {
+    font-size: 14px;
+    padding: 10px;
+    text-align: center; /* Ensures proper alignment */
+  }
+
+  .Content {
+    padding: 20px 10px;
+    text-align: center; /* Content alignment center */
+  }
+
+  .content-inner {
+    padding: 10px;
+  }
+
+  .box {
+    width: 100%; /* Full width adjustment for smaller screens */
+    margin-bottom: 20px;
+  }
+
+  .content-inner .boxx {
+    grid-template-columns: 1fr; /* Single-column grid for better spacing */
+    gap: 10px;
+  }
+
+  .content-inner .h_box {
+    margin-top: 20px;
+    grid-template-columns: repeat(2, 1fr); /* 2 items in a row */
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center alignment for items */
+  }
+}
+
+/* 375 */
+
 /* 320px */
 @media (max-width: 320px) {
   .main {
     padding: 5px;
     width: 100%;
   }
-
   .right-section {
     width: 100%;
     margin: 0 auto;
@@ -737,12 +832,11 @@ h4 {
   }
   .h_box {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+     flex-direction: column; 
+     justify-content: center; 
+     align-items: center; 
   }
 }
-
 #butndiv {
   margin-top: 50px;
   display: flex;
