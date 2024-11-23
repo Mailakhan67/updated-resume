@@ -642,7 +642,6 @@ h4 {
 }
 
 /* 375 */
-/* For 375px screen size */
 @media (max-width: 375px) {
   .main {
     width: 100%;
@@ -653,26 +652,24 @@ h4 {
     align-items: center;
     justify-content: center;
   }
-
   .left-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
      align-items: center; 
-    width: 100%; /* Full width for small screens */
-    margin-bottom: 20px; /* Gap between left and right sections */
-    height: auto; /* Height automatically adjust hogi */
-    text-align: center; /* Content centered rakha */
+    width: 100%; 
+    margin-bottom: 20px; 
+    height: auto; 
+    text-align: center; 
   }
-
   .right-section {
-    width: 100%; /* Full width for small screens */
-    margin-left: 0; /* Margin remove ki */
-    height: auto; /* Height automatically adjust hogi */
+    width: 100%; 
+    margin-left: 0; 
+    height: auto; 
   }
   .name {
     font-size: 36px;
-    text-align: center; /* Centered text */
+    text-align: center; 
     margin-top: 10px;
   }
   .Profile {
@@ -685,15 +682,13 @@ h4 {
   }
   img {
     left: 50%;
-    transform: translateX(-50%); /* Image properly center aligned */
+    transform: translateX(-50%); 
     top: -38px;
   }
-
   h2 {
     font-size: 16px;
     text-align: center;
   }
-
   .about_p {
     font-size: 12px;
     line-height: 20px;
@@ -703,12 +698,12 @@ h4 {
   .p_h {
     font-size: 14px;
     padding: 10px;
-    text-align: center; /* Ensures proper alignment */
+    text-align: center; 
   }
 
   .Content {
     padding: 20px 10px;
-    text-align: center; /* Content alignment center */
+    text-align: center; 
   }
 
   .content-inner {
@@ -716,26 +711,24 @@ h4 {
   }
 
   .box {
-    width: 100%; /* Full width adjustment for smaller screens */
+    width: 100%; 
     margin-bottom: 20px;
   }
 
   .content-inner .boxx {
-    grid-template-columns: 1fr; /* Single-column grid for better spacing */
+    grid-template-columns: 1fr; 
     gap: 10px;
   }
 
   .content-inner .h_box {
     margin-top: 20px;
-    grid-template-columns: repeat(2, 1fr); /* 2 items in a row */
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center alignment for items */
+    justify-content: center; 
   }
 }
-
-/* 375 */
 
 /* 320px */
 @media (max-width: 320px) {
@@ -812,7 +805,6 @@ h4 {
     width: 80%;
     max-width: 100px;
   }
-
   .content-inner .boxx,
   .content-inner .h_box {
     grid-template-columns: 1fr;
