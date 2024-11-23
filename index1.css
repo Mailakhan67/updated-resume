@@ -45,7 +45,7 @@ html {
   font-size: 20px;
   font-weight: bold;
   background-color: #5ab26e;
-  width: 100px;
+  width: 150px;
   padding: 10px;
   border-radius: 10px;
   text-align: center;
@@ -109,6 +109,15 @@ html {
     font-size: 20px;
   }
 }
+@media (max-width: 369px) {
+  #navDiv2 a {
+    font-size: 14px;
+    padding: 5px;
+    width: 100px;
+  }
+}
+
+
 /* 640px screen */
 @media (max-width: 640px) {
   #nav {
@@ -176,15 +185,17 @@ html {
     height: auto;
   }
   #navDiv1 {
+    width: 50px;
     font-size: 18px;
   }
   #navDiv2 {
+    margin-right: 20px;
     gap: 8px;
   }
   #navDiv2 a {
     font-size: 18px;
     padding: 8px;
-    width: 100px;
+    width: 130px;
   }
   #navDiv2 i {
     font-weight: bold;
