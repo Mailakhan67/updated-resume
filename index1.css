@@ -3,6 +3,14 @@
   padding: 0;
   font-family: system-ui, "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
 }
+@media print {
+  #nav {
+    display: none;
+  }
+  .main1 {
+    display: block;
+  }
+}
 
 html,
 body {
@@ -411,6 +419,104 @@ h4 {
   margin-left: 10px;
 }
 
+/* 768px screen */
+@media screen and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    width: 95%;
+    margin: 10px auto;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+    margin: 0;
+  }
+
+  .left-section {
+    padding: 10px;
+  }
+
+  .right-section {
+    padding: 15px;
+    margin-top: 10px;
+  }
+
+  .name {
+    font-size: 35px;
+  }
+
+  .d_p {
+    font-size: 12px;
+  }
+
+  .Profile {
+    margin-top: 50px;
+    padding: 15px;
+  }
+
+  img {
+    width: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  .about_p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .p_h {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  h3 {
+    width: auto;
+    font-size: 16px;
+    padding: 8px 10px;
+  }
+
+  h3::after {
+    width: 150px;
+  }
+
+  .content-inner {
+    padding: 20px 10px;
+  }
+
+  .box {
+    width: 100%;
+    float: none;
+    margin-bottom: 15px;
+  }
+
+  .h_box {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .content-inner .boxx {
+    grid-template-columns: 100px 1fr;
+  }
+
+  .content-inner .boxx h4 {
+    font-size: 14px;
+  }
+
+  .content-inner .boxx .percet {
+    height: 8px;
+  }
+
+  .content-inner .boxx .percet div {
+    height: 100%;
+  }
+}
+
 /* media query */
 @media (max-width: 640px) {
   .main {
@@ -666,6 +772,7 @@ button:hover {
 }
 #resume {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }

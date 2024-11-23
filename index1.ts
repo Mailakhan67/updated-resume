@@ -1,15 +1,13 @@
 const outputElement = document.getElementById("resume");
 const actionButtons = document.createElement("div");
-actionButtons.id = " buttonsContainer";
+actionButtons.id = "buttonsContainer";
 outputElement?.appendChild(actionButtons);
 
-//pdf download  button //
+// //pdf download  button //
 const pdfDownloadButton = document.createElement("button");
 pdfDownloadButton.innerText = "Download as PDF";
 pdfDownloadButton.style.backgroundColor = "green";
-console.log(pdfDownloadButton);
 pdfDownloadButton.style.fontSize = "20px";
-pdfDownloadButton.style.animation = "2sc";
 pdfDownloadButton.style.cursor = "pointer";
 pdfDownloadButton.style.fontWeight = "bolder";
 document.querySelector("body")?.append(pdfDownloadButton);
@@ -24,8 +22,10 @@ const copyLinkButton = document.createElement("button");
 copyLinkButton.innerText = "Copy Shareable Link";
 copyLinkButton.style.fontSize = "20px";
 copyLinkButton.style.fontWeight = "bolder";
-copyLinkButton.style.marginLeft = "8px";
+copyLinkButton.style.marginLeft = "px";
 copyLinkButton.style.cursor = "pointer";
+copyLinkButton.style.display = "flex";
+copyLinkButton.style.flexDirection = "column";
 
 copyLinkButton.addEventListener("click", async () => {
   try {
