@@ -95,7 +95,7 @@ document
         copyLinkButton.style.fontSize = "20px"; 
         copyLinkButton.addEventListener("click", async () => {
           try {
-            const shareableLink = `https://yourdomain.com/resumes ${name.replace(
+            const shareableLink = `https://resume-builder-six-eta.vercel.app/ ${name.replace(
               /\s+/g,
               "_"
             )}_cv.html `;
