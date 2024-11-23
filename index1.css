@@ -36,8 +36,9 @@ html {
   align-items: center;
   background-color: #b0a8d2;
   height: 70px;
+  
   padding-left: 70px;
-  padding-right: 70px;
+  padding-right: 150px;
 }
 #navDiv2 a {
   text-decoration: none;
