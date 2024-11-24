@@ -68,7 +68,7 @@ copyLinkButton.addEventListener("click", function () { return __awaiter(_this, v
             case 0:
                 _a.trys.push([0, 2, , 3]);
                 name_1 = "John Doe";
-                shareableLink = "https://resume-lilac-one.vercel.app/".concat(name_1.replace(/\s+/g, "_"), "_cv.html");
+                shareableLink = "https://majestic-travesseiro-c18e43.netlify.app/".concat(name_1.replace(/\s+/g, "_"), "_cv.html");
                 // Copy the link to clipboard
                 return [4 /*yield*/, navigator.clipboard.writeText(shareableLink)];
             case 1:
