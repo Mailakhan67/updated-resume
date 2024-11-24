@@ -95,7 +95,7 @@ document
         copyLinkButton.style.fontSize = "20px"; 
         copyLinkButton.addEventListener("click", async () => {
           try {
-            const shareableLink = `https://resume-lilac-one.vercel.app/ ${name.replace(
+            const shareableLink = `https://amazing-blini-7f1d40.netlify.app/${name.replace(
               /\s+/g,
               "_"
             )}_cv.html `;

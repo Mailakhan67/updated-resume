@@ -30,7 +30,7 @@ copyLinkButton.style.flexDirection = "column";
 copyLinkButton.addEventListener("click", async () => {
   try {
     const name = "John Doe";
-    const shareableLink = `https://resume-lilac-one.vercel.app/${name.replace(
+    const shareableLink = `https://amazing-blini-7f1d40.netlify.app/${name.replace(
       /\s+/g,
       "_"
     )}_cv.html`;
