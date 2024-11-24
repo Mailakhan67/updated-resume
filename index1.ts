@@ -30,7 +30,7 @@ copyLinkButton.style.flexDirection = "column";
 copyLinkButton.addEventListener("click", async () => {
   try {
     const name = "John Doe";
-    const shareableLink = `https://resume-builder-six-eta.vercel.app/${name.replace(
+    const shareableLink = `https://resume-lilac-one.vercel.app/${name.replace(
       /\s+/g,
       "_"
     )}_cv.html`;
